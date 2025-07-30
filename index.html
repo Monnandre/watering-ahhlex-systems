@@ -6,7 +6,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to Watering Ahhlex Systems!</h1>
+  <script>
+  fetch("https://eoc4nhbhkrn64dy.m.pipedream.net", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      url: window.location.href,
+      referrer: document.referrer,
+      userAgent: navigator.userAgent,
+      time: new Date().toISOString()
+    })
+  });
+  </script>
+  <h1>Welcome to Watering Ahhlex Systems!2</h1>
   <p>This is your GitHub Pages site, linked to <strong>watering.ahhlex.systems</strong>.</p>
   <footer>
     <p>Powered by <a href="https://github.com/Monnandre/watering-ahhlex-systems">GitHub Pages</a></p>
